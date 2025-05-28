@@ -19,7 +19,7 @@ const Navbar: React.FC = () => {
     <header className="sticky top-0 z-50 bg-slate-950/80 backdrop-blur border-b border-slate-800">
       <nav className="max-w-7xl mx-auto px-4 py-3 flex justify-between items-center">
         <Link to="/" className="text-xl font-bold text-cyan-400">
-          Aristote De Yaingain<span className="text-white">.</span>
+          Aristote<span className="text-white">.</span>
         </Link>
 
         {/* Desktop Links */}

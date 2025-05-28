@@ -1,18 +1,35 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
 import { ArrowRight } from 'lucide-react';
+import pic from '../assets/pic.jpg'; // ✅ Image importée
 
 const Home: React.FC = () => {
   return (
-    <section className="flex flex-col items-center justify-center min-h-[80vh] px-6 text-center">
+    <section className="flex flex-col items-center justify-center min-h-[85vh] px-6 text-center">
+      {/* Photo de profil */}
+      <div className="w-40 h-40 md:w-48 md:h-48 rounded-full overflow-hidden border-4 border-cyan-500 shadow-lg mb-6">
+        <img
+          src={pic}
+          alt="Aristote Fankam"
+          className="object-cover w-full h-full"
+        />
+      </div>
+
+      {/* Infos de présentation */}
       <div className="max-w-3xl">
         <h1 className="text-4xl md:text-6xl font-extrabold text-transparent bg-clip-text bg-gradient-to-r from-cyan-400 to-blue-500 drop-shadow-sm">
-          Bonjour, je suis Aristote
+          Aristote FANKAM
         </h1>
-        <p className="mt-6 text-lg md:text-xl text-slate-300 leading-relaxed">
-          Ingénieur en Électronique & Intelligence Artificielle, spécialisé dans les systèmes experts, la détection précoce des maladies et les technologies médicales intelligentes.
+
+        <p className="mt-4 text-lg md:text-xl text-slate-300 leading-relaxed">
+          Ingénieur R&D en <strong>IA Médicale</strong>, <strong>Électronique</strong> et <strong>Systèmes Intelligents</strong>, avec plus de 5 ans d’expérience en développement logiciel, automatisation et innovation technologique.
         </p>
 
+        <p className="mt-3 text-base text-slate-400">
+          J’allie deep learning, systèmes embarqués et développement web pour créer des solutions à impact dans la santé, l’éducation et l’industrie en Afrique.
+        </p>
+
+        {/* Boutons d'action */}
         <div className="mt-8 flex flex-col sm:flex-row justify-center gap-4">
           <Link
             to="/projects"
@@ -26,6 +43,10 @@ const Home: React.FC = () => {
           >
             Me contacter
           </Link>
+        </div>
+
+        <div className="mt-6 text-sm text-slate-500">
+          Basé à Bafoussam, Cameroun • Bilingue FR/EN • Ouvert à la collaboration
         </div>
       </div>
     </section>
