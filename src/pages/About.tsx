@@ -22,12 +22,13 @@ const About: React.FC = () => {
       <div className="mt-10">
         <h3 className="text-2xl font-semibold mb-4 text-white">Compétences principales</h3>
         <ul className="grid grid-cols-2 md:grid-cols-3 gap-3 text-slate-300 text-sm">
-          <li className="bg-slate-800 px-4 py-2 rounded-xl">Deep Learning & Radiomics</li>
-          <li className="bg-slate-800 px-4 py-2 rounded-xl">Systèmes experts & IA médicale</li>
-          <li className="bg-slate-800 px-4 py-2 rounded-xl">React, TypeScript, TailwindCSS</li>
-          <li className="bg-slate-800 px-4 py-2 rounded-xl">Laravel, FastAPI, Django</li>
+          <li className="bg-slate-800 px-4 py-2 rounded-xl">Data Science, Deep Learning & Radiomics</li>
+          <li className="bg-slate-800 px-4 py-2 rounded-xl">Systèmes experts, IA médicale & Cybersecurité</li>
+          <li className="bg-slate-800 px-4 py-2 rounded-xl">Angular, React, TypeScript, TailwindCSS</li>
+          <li className="bg-slate-800 px-4 py-2 rounded-xl">Laravel, NextJS, FastAPI, Django</li>
           <li className="bg-slate-800 px-4 py-2 rounded-xl">Maintenance & automatisation</li>
           <li className="bg-slate-800 px-4 py-2 rounded-xl">Électronique & systèmes embarqués</li>
+          <li className="bg-slate-800 px-4 py-2 rounded-xl">Mathématiques & Physiques appliquées</li>
         </ul>
       </div>
 
